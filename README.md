@@ -1,110 +1,97 @@
-# Apoio-a-Leitura
 # 📚 Sistema de Análises Críticas para Incentivo à Leitura
 
 ## 📖 Sobre o Projeto
-O Sistema de Análises Críticas para Incentivo à Leitura é uma plataforma web desenvolvida para mitigar o declínio do engajamento literário no ambiente educacional. O sistema permite que os estudantes publiquem, compartilhem e discutam análises críticas sobre livros e artigos. Ao fomentar um ambiente digital interativo, a plataforma busca reverter a baixa adesão à leitura, promovendo o pensamento crítico, a usabilidade e a troca de conhecimentos de forma colaborativa e dinâmica.
+O Sistema de Análises Críticas para Incentivo à Leitura é uma plataforma web desenvolvida para mitigar o declínio do engajamento literário no ambiente educacional. O sistema funciona como um acervo gerenciado pelos docentes, onde os professores cadastram livros e artigos e os estudantes participam ativamente consumindo as obras, inserindo comentários e atribuindo avaliações críticas. Ao fomentar um ambiente digital interativo, a plataforma busca promover o pensamento crítico, a usabilidade e a troca de conhecimentos de forma colaborativa e dinâmica.
 
 ## 🎯 Objetivos
 
 **Objetivo Geral**
-Desenvolver um ambiente digital interativo voltado à criação e ao compartilhamento de análises críticas, visando incentivar o hábito da leitura e promover o pensamento crítico no meio educacional.
+Desenvolver um ambiente digital interativo voltado ao compartilhamento de comentários e avaliações de obras, visando incentivar o hábito da leitura e promover o pensamento crítico no meio educacional.
 
 **Objetivos Específicos**
-* Fornecer um repositório centralizado de obras literárias (livros e artigos).
-* Disponibilizar ferramentas estruturadas para redação e publicação de resenhas críticas.
-* Estimular a interação social por meio de comentários e validação mútua (curtidas).
-* Oferecer mecanismos de busca e filtros eficientes para exploração do acervo.
-* Prover relatórios de engajamento e ferramentas de moderação para administradores e docentes.
+* Fornecer um repositório centralizado de obras literárias (livros e artigos) gerenciado por professores.
+* Disponibilizar ferramentas estruturadas para que os alunos façam comentários e avaliações críticas nas obras.
+* Estimular a interação social e o debate acadêmico dentro da comunidade escolar.
+* Oferecer mecanismos de busca e filtros eficientes por categorias e gêneros.
+* Prover ferramentas de moderação e análise de engajamento para os administradores.
 
 ## 👥 Público-Alvo
-* **Estudantes:** Usuários centrais que consumirão o acervo literário, vizualizarão as resenhas e interagirão com seus pares no sistema.
-* **Professores:** Usuários com perfil administrativo/orientador, responsáveis por cadastrar acervos, orientar discussões, moderar conteúdos e analisar o progresso de leitura.
-* **Instituições de ensino:** Escolas e faculdades que buscam integrar ferramentas tecnológicas para complementar práticas pedagógicas e métricas de leitura extracurricular.
+* **Estudantes:** Usuários que consomem o acervo literário, realizam buscas e publicam seus comentários e avaliações sobre as obras.
+* **Professores / Administradores:** Responsáveis por alimentar o repositório cadastrando novos livros, gerenciar categorias, orientar as discussões e moderar os comentários.
+* **Instituições de Ensino:** Escolas e faculdades que buscam integrar ferramentas tecnológicas para complementar práticas pedagógicas de leitura.
 
 ## ✨ Funcionalidades
-* **Cadastro de usuários:** Registro seguro de alunos e professores na plataforma.
-* **Login e autenticação:** Acesso via credenciais criptografadas com controle e validação de sessão.
-* **Perfil do usuário:** Personalização de biografia literária e gestão de dados pessoais.
-* **Cadastro de livros:** Inserção de obras no catálogo institucional (título, autor, editora, gênero, sinopse).
-* **Publicação de resenhas:** Editor integrado para redação da análise crítica com atribuição de nota (1 a 5).
-* **Comentários:** Espaço dedicado para interações e discussões em resenhas específicas.
-* **Curtidas/interações:** Validação social das análises publicadas por outros usuários.
-* **Busca de livros:** Ferramenta global de localização rápida no acervo literário.
-* **Filtros:** Opções de refinamento da pesquisa por categoria, autor, gênero ou palavra-chave.
-* **Relatórios administrativos:** Extração de métricas de engajamento estudantil e volume de leitura.
-* **Moderação de conteúdo:** Ferramentas para exclusão de publicações indevidas, gestão de denúncias e manutenção das diretrizes da comunidade.
+* **Cadastro de usuários:** Registro seguro de alunos e professores com distinção de perfis.
+* **Login e autenticação:** Acesso restrito via credenciais validadas com controle de sessão.
+* **Perfil do usuário:** Personalização de dados e biografia do leitor.
+* **Cadastro de conteúdos:** Inserção de obras no catálogo institucional (exclusivo para professores).
+* **Comentários e avaliações:** Espaço para os alunos digitarem suas impressões críticas e atribuírem notas às obras.
+* **Busca global e filtros:** Localização rápida de livros por categoria, autor ou palavra-chave.
+* **Moderação de conteúdo:** Ferramentas administrativas para exclusão de interações indevidas.
 
 ## 📋 Requisitos Funcionais
-* **RF01 - Gestão de Perfil:** O sistema deve permitir que o usuário crie uma conta, recupere senha e personalize seu perfil de leitor.
-* **RF02 - Repositório de Obras:** Funcionalidade para cadastrar livros (Título, Autor, Gênero) que servirão de base para as análises.
-* **RF03 - Editor de Análises:** Espaço para redação de textos críticos com suporte a formatação básica e vinculação obrigatória a um livro e a uma nota.
-* **RF04 - Motor de Interação:** Sistema de comentários em tempo real e botão de "curtir" para validação social das resenhas.
-* **RF05 - Filtros de Busca:** Localização rápida de análises por categoria, autor ou palavra-chave.
+* **RF01 - Gestão de Autenticação e Perfil:** O sistema deve permitir que o usuário crie uma conta, recupere senha e personalize seu perfil de leitor.
+* **RF02 - Repositório de Obras:** Funcionalidade exclusiva do professor para cadastrar conteúdos (Título, Autor, Descrição, Imagem) que servirão de base para o sistema.
+* **RF03 - Motor de Interação Social:** Espaço para o aluno digitar comentários e atribuir avaliações/notas associadas a um conteúdo específico.
+* **RF04 - Busca e Filtros:** Mecanismo para localização rápida de conteúdos por meio de categorias ou palavras-chave.
 
 ## ⚙️ Requisitos Não Funcionais
 * **RNF01 - Responsividade:** A interface deve adaptar-se automaticamente a diferentes tamanhos de tela (abordagem Mobile-First).
 * **RNF02 - Disponibilidade:** O sistema deve estar acessível via web com alta disponibilidade sob uma arquitetura Cliente-Servidor.
-* **RNF03 - Usabilidade:** O tempo de aprendizado para um novo usuário realizar sua primeira interação não deve ultrapassar 5 minutos.
+* **RNF03 - Usabilidade:** O tempo de aprendizado para um novo usuário não deve ultrapassar 5 minutos devido à interface simplificada.
 * **RNF04 - Performance:** O carregamento da página inicial não deve exceder 2 segundos em conexões padrão.
-* **RNF05 - Integridade:** O banco de dados deve seguir o modelo relacional normalizado (até a 3FN) garantindo integridade referencial.
+* **RNF05 - Integridade:** O banco de dados deve seguir o modelo relacional normalizado, garantindo consistência por meio de chaves estrangeiras.
 
 ## 🏗️ Arquitetura do Sistema
-* **Arquitetura Cliente-Servidor:** O sistema baseia-se num fluxo bidirecional de comunicação, separando as responsabilidades de visualização (cliente) das lógicas de negócio e persistência (servidor).
-* **Front-end:** A camada de apresentação (cliente) é processada via navegador, construída para ser responsiva e interativa, encarregada de recolher os dados dos usuários e exibir as informações de retorno em tempo real.
-* **Banco de Dados Relacional:** O armazenamento é centralizado através do SGBD PostgreSQL, que garante o suporte a transações ACID, restrições e exclusão em cascata (Cascade Delete) garantindo que não existam registros órfãos.
-* **Fluxo geral da aplicação:** O usuário interage com as interfaces web gerando requisições HTTP; o servidor valida regras de negócio (como login e notas válidas entre 1 e 5), comunica-se com o banco relacional para leitura ou escrita (CRUD) e devolve a resposta atualizada para compor dinamicamente a tela do usuário.
+* **Arquitetura Cliente-Servidor:** O sistema separa as responsabilidades de visualização (cliente) das lixas de negócio e persistência (servidor).
+* **Front-end:** Camada de apresentação processada via navegador, construída com foco em responsividade para coletar as interações dos alunos e exibir os dados do acervo.
+* **Banco de Dados Relacional:** Armazenamento centralizado que garante suporte a transações estáveis, restrições de chaves e consultas otimizadas através de junções (`INNER JOIN`).
 
 ## 🗄️ Modelo de Dados
-* **Usuário:** Tabela responsável por guardar as credenciais de acesso, biografia e histórico. Relaciona-se num escopo (1:N) tanto com Resenhas quanto com Comentários.
-* **Livro:** Entidade base do acervo oficial. Contém atributos como título, autor, gênero e capa. Relaciona-se (1:N) com a entidade Resenha.
-* **Resenha:** O núcleo do sistema. Atua como um elo dependente que exige a ligação via chaves estrangeiras (FK) de um Livro validado e de um Usuário autenticado.
-* **Comentário:** Dependência social direta, obrigatoriamente referenciando uma Resenha pré-existente e um Usuário emissor.
+* **Usuários e Tipo de Usuário:** Armazena as credenciais e define o nível de acesso (Aluno ou Professor).
+* **Conteúdo e Categoria:** Representa as obras literárias cadastradas pelos professores, devidamente organizadas por suas respectivas categorias.
+* **Comentário:** O elo de interação do sistema, onde o aluno vincula seu comentário e sua nota a um conteúdo específico do acervo.
 
 ## 💻 Tecnologias Utilizadas
 
 | Tecnologia | Finalidade |
 | :--- | :--- |
 | **HTML5** | Estrutura semântica das páginas web |
-| **CSS3** | Estilização responsiva (Grid/Flexbox) e design visual |
+| **CSS3** | Estilização responsiva e design visual |
 | **JavaScript** | Manipulação do DOM, lógicas algorítmicas e interatividade |
-| **PostgreSQL** | Banco de Dados Relacional, persistência e integridade referencial |
-| **Git** | Controle de Versão de código e ramificações (Branches) |
-| **GitHub** | Repositório em nuvem, controle de projetos (Kanban) e Pull Requests |
+| **PostgreSQL / MySQL** | Banco de Dados Relacional e persistência de dados |
+| **Git** | Controle de versão de código local |
+| **GitHub** | Repositório em nuvem, gerenciamento ágil (Kanban) e Pull Requests |
+| **VS Code** | Ambiente de Desenvolvimento Integrado (IDE) |
+| **Figma** | Prototipação das interfaces e design UI/UX |
+| **brModelo** | Modelagem conceitual e lógica do banco de dados |
+| **Lucidchart** | Criação de diagramas UML e Engenharia de Software |
+| **MySQL Workbench** | Modelagem física e administração do banco de dados |
 | **Cisco Packet Tracer** | Simulação da arquitetura de conectividade e infraestrutura da rede |
+| **Canva** | Design do banner acadêmico e identidade visual |
+| **Stitch** | Componentização e documentação visual do projeto |
 
 ## 🔄 Fluxo de Utilização
-1. **Cadastro:** O estudante ou professor preenche os dados cadastrais básicos inserindo um registro na plataforma.
-2. **Login:** As credenciais são inseridas, validadas, e a sessão é liberada permitindo o acesso a recursos de interação.
-3. **Consulta de livros:** O usuário explora o catálogo da instituição listado na página principal.
-4. **Escrita de resenhas:** O usuário seleciona uma obra, atribui uma avaliação e formaliza seu pensamento crítico via editor integrado.
-5. **Comentários:** Outros membros da comunidade visualizam a resenha recém-publicada e deixam suas opiniões.
-6. **Interação com a comunidade:** Geração de curtidas, réplicas e discussão fomentando um ambiente de validação acadêmica contínua.
+1. **Cadastro e Login:** O usuário realiza seu registro e acessa a plataforma com sua respectiva permissão (Aluno ou Professor).
+2. **Alimentação (Professor):** O professor cadastra os livros e artigos vinculando-os a uma categoria.
+3. **Consulta (Aluno):** O aluno navega pelo Dashboard, utiliza a busca global e seleciona uma obra do catálogo.
+4. **Interação (Aluno):** O aluno digita seu comentário, atribui sua avaliação e o sistema associa essa interação ao perfil dele e ao livro selecionado.
 
 ## 🌐 Infraestrutura
-O ambiente que sustenta a aplicação segue diretrizes robustas de redes simuladas:
-* **Rede Cliente-Servidor:** Os dispositivos do laboratório atuam unicamente solicitando dados enquanto máquinas dedicadas provêm os serviços.
-* **Servidor Web:** Ponto de hospedagem que responde às chamadas HTTP/HTTPS para servir as páginas do sistema.
-* **Servidor Banco de Dados:** Isolado para processar exclusivamente a gestão do SGBD e garantir segurança física das informações.
-* **Servidor DNS:** Atribui e resolve nomes de domínio locais para IPs, facilitando a memorização do acesso à rede pelos alunos.
-* **Rede LAN:** Configuração física em estrela do laboratório escolar.
-* **Access Point:** Ponto de emissão Wi-Fi permitindo a entrada dos smartphones (abordagem Mobile-First) na rede local de forma segura.
-* **Segmentação de rede:** Utilização de Switches e Roteadores segmentando logicamente a rede de alunos do ambiente gerencial corporativo.
+* **Rede LAN:** Configuração física em estrela baseada no ambiente de laboratório institucional.
+* **Access Point:** Emissão de sinal Wi-Fi para permitir o acesso responsivo via dispositivos móveis.
+* **Servidores Dedicados:** Divisão estrutural simulada contendo Servidor Web, Servidor de Banco de Dados e Servidor DNS para resolução de nomes locais.
 
 ## 📱 Interface
-O protótipo de alta fidelidade destaca abordagens de UX/UI como o "Dark Mode" e a fluidez do carregamento visual:
-* **Dashboard:** Painel principal concentrando um resumo das atividades recentes da rede de leitura.
-* **Sidebar:** Menu de navegação lateral fixa, reunindo ícones limpos para "Início", "Livros" e "Notificações".
-* **Navbar:** Barra de navegação do topo com acesso ao perfil do usuário ativo e centralização visual rápida.
-* **Área de Destaques:** *Hero Section* interativa exibindo os "Top 10 Livros" e o inteligente bloco de "Continuar lendo".
-* **Busca Global:** Campo universal situado no topo para varredura dinâmica, não exigindo navegação extra para iniciar procura de obras ou autores.
+* **Dashboard:** Painel dinâmico que exibe os carrosséis de livros e o resumo do acervo.
+* **Sidebar e Navbar:** Menus fixos estruturados com ícones limpos para guiar a navegação do usuário.
+* **Área de Destaques e Busca Global:** Seções focadas em sugerir leituras ("Top 10") e permitir buscas instantâneas no topo da tela.
 
 ## 🚀 Possíveis Melhorias Futuras
-* Sistema de recomendações com IA (Machine Learning) baseado nos gêneros consumidos.
-* Gamificação completa das etapas de desenvolvimento de leitura.
-* Ranking de leitores contabilizando top resenhistas ou meta anual de leitura do aluno.
-* Aplicativo mobile nativo para iOS e Android garantindo o suporte avançado de notificações.
-* Integração com bibliotecas digitais externas via APIs de terceiros.
-* Sistema de conquistas (*badges/insígnias digitais*) recompensando diferentes estágios da jornada literária.
+* Sistema de recomendações com IA baseado no histórico de leituras do aluno.
+* Gamificação completa com ranking de leitores e conquistas por objetivos alcançados.
+* Aplicativo mobile nativo para iOS e Android.
+* Integração via API com bibliotecas digitais externas.
 
 ## 👨‍💻 Equipe
 * Lívia Ghirardi do Amaral
@@ -112,4 +99,7 @@ O protótipo de alta fidelidade destaca abordagens de UX/UI como o "Dark Mode" e
 * Tuanny Tomazelli
 
 ## 📚 Contexto Acadêmico
-Projeto Integrador desenvolvido sob o formato interdisciplinar para o curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas do SENAI (Escola e Faculdade de Tecnologia SENAI Gaspar Ricardo Junior - Sorocaba/SP).
+Projeto Integrador desenvolvido para o curso superior de Tecnologia em Análise e Desenvolvimento de Sistemas da Escola e Faculdade de Tecnologia SENAI Gaspar Ricardo Junior (Sorocaba/SP).
+
+## 📄 Licença
+Distribuído sob a licença MIT.
